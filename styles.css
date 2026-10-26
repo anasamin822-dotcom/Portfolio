@@ -614,3 +614,23 @@ button { font-family: inherit; cursor: pointer; }
   .sec-title { font-size: clamp(1.3rem, 6.2vw, 2.6rem); }
   .finale-title { font-size: clamp(1.3rem, 5.9vw, 4rem); }
 }
+
+/* Project refresh: readable cards, resilient fonts and touch targets. */
+:root { --font-d: 'Syne', 'Arial Black', Arial, sans-serif; --font-b: 'Plus Jakarta Sans', Arial, sans-serif; --font-m: 'Space Mono', 'Courier New', monospace; }
+.cw-grid { align-items: stretch; }
+.cw-card { min-width: 0; }
+.cw-status { display: block; margin-top: 18px; font-family: var(--font-m); font-size: 10px; font-weight: 700; letter-spacing: .08em; color: var(--tomato-deep); }
+.cw-name, .poster-name { overflow-wrap: anywhere; line-height: 1.15; }
+.poster { display: flex; flex-direction: column; }
+.poster-body { flex: 1; display: flex; flex-direction: column; }
+.poster-cta { margin-top: auto; padding-top: 16px; }
+.poster-tags { margin-bottom: 4px; }
+.poster-art { flex-shrink: 0; }
+.originals .sec-sub { color: var(--mist); }
+.mini-btn, .rail-btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.hero-meta { flex-wrap: wrap; }
+.contact-row strong { overflow-wrap: anywhere; min-width: 0; }
+@media(max-width: 480px) { .contact-row { grid-template-columns: 1fr; gap: 8px; } .cw-info { padding: 18px; } .hero-name { font-size: clamp(4rem, 24vw, 7rem); } }
+
+@media(max-width: 480px) { .poster-name { font-size: 20px; } .cw-name { font-size: 20px; } .hero-copy { min-width: 0; } .hero-statement { overflow-wrap: anywhere; } }
+@media(max-width: 480px) { .hero-name { font-size: 18vw; } }
