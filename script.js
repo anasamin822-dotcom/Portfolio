@@ -128,7 +128,7 @@
       burger.setAttribute('aria-expanded', String(open));
     });
     navLinks.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () { navLinks.classList.remove('open'); });
+      a.addEventListener('click', function () { navLinks.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); });
     });
   }
 
